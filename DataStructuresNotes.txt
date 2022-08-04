@@ -1,0 +1,229 @@
+1)Array
+
+TIME COMPLEXITY:
+            best  worst
+access      O(1)  0(1)
+insertion   O(n)  O(n)
+  append    O(1)  O(1)
+  prepend   O(n)  O(n)
+deletion    O(n)  O(n)
+  pop front O(n)  O(n)
+  pop back  O(n)  O(n)
+search      O(1)  O(n)
+traverse    O(n)  O(n)
+
+
+SPACE COMPLEXITY O(n):
+ordered in memory
+fixed size
+
+PROS:
+random access
+fast push(append)
+
+CONS:
+slow insertion & deletion
+time costy when resize
+================================================
+
+2)Hash table
+
+TIME COMPLEXITY:
+            best  worst
+access      O(1)  0(n)
+insertion   O(1)  O(n)
+  append    NA
+  prepend   NA
+deletion    O(1)  O(n)
+  pop back  NA
+  pop front NA
+search      O(1)  O(n) 
+traverse    O(n)  O(n)
+
+SPACE COMPLEXITY O(n):
+not ordered items in memory
+dynamic size
+
+PROS:
+fast access when no collision
+fast insertion & deletion & search
+flexible keys as can use any data type as a key
+
+CONS:
+not ordered in memory so bad traverse for all keys
+=====================================================
+
+3)Linked List
+
+Time complexity:
+              best  worst
+access        NA
+insertion     O(n)  O(n)
+  append      O(1)  O(1)
+  prepend     O(1)  O(1)
+delete        O(n)  O(n)
+  pop back    O(n)  O(n) but DLL O(1)
+  pop front   O(1)  O(1)
+search        O(n)  O(n)
+traverse      O(n)  O(n)
+
+SPACE COMPLEXITY: O(n) but bigger than array due to pointers
+items are ordered in memory
+dynamic size
+
+PROS:
+fast insertion & deletion
+dynamic size
+ordered items
+
+CONS:
+no fast access
+space consuming
+=================================================================
+
+4)Stack
+
+TIME COMPLEXITY:
+top      O(1)
+push     O(1)
+pop      O(1)
+search   O(n)
+traverse O(n)
+
+SPACE COMPLEXITY O(n);
+ordered items in memory
+dynamic or fxed size (linked list based or array based)
+
+PROS:
+used for lifo
+fast push & pop
+ordered
+fast peek access
+
+CONS:
+slow search or traverse
+=================================================================
+
+5)Queue
+
+TIME COMPLEXITY:
+front       O(1)
+enqueue     O(1)
+dequeue     O(1)
+search      O(n)
+traverse    O(n)
+
+SPACE COMPLEXITY O(n):
+ordeder items in memory
+fixed or dynamic size (array based or lls based)
+
+PROS:
+used for fifo
+same as stack
+
+CONS:
+same as stack
+====================================================================
+6)Tree
+
+a)Binary Search Tree
+
+TIME COMPLEXITY:
+           best      worst
+access     NA
+insertion  O(log n)  O(n)
+deletion   O(log n)  O(n)
+search     O(log n)  O(n)
+traverse
+   BFS     O(n)
+   DFS     O(n)
+
+SPACE COMPLEXITY O(n):
+ordered items in memory
+dynamic size
+
+PROS:
+fast search & insertion & deletion
+ordered
+
+Cons:
+slow traverse
+no operation of O(1)
+must traverse in all operations
+
+BALANCED BST
+1)AVL tree 
+  balance the tree at every insertion if needed
+  by calculating the balance factor for every node
+  keep searching log n
+  insertion & deletion become consuming more time
+
+2)Red Black tree
+  balance the tree if balancing factor exceeded certain limit
+  so tree become higher so searching become less effecient
+  but insertion & deletion become better than AVL
+
+AVL --> if searching is more important
+Red black --> is insertion & deletion are more important
+  
+--------------------------------------------------------------
+b)Binary heap
+max heap & min heap
+
+TIME COMPLEXITY:
+            best  worst
+access      NA
+insertion   O(1)  O(log n)
+deletion    O(log n)
+search      O(n)
+traverse    O(n)
+
+SPACE COMPLEXITY O(n):
+ordered items in memory
+dynamic size
+
+PROS:
+fast insertion from left to right, with worst case log n
+priority for each element
+flexible size
+
+CONS:
+slow traverse
+-------------------------------------------
+c)Trie
+
+TIME COMPLEXITY:
+           best  worst
+access     O(word length) const
+insertion
+deletion
+search    const
+
+
+SPACE COMPLEXITY O(items):
+ordered
+
+PROS:
+fast lookup or search
+
+CONS:
+consume more memory
+==================================================================
+7)Graph
+
+directed & undirected
+cyclic & acyclic
+weighted & unweighted
+
+Implementation
+  edge list
+  adjacent lists (lists can be arrays linked lists, sets)
+  adjacent matrix
+
+Using to represent relations between objects
+
+it does not for storing data, but for storing the relationships between data
+
+
+        
+
